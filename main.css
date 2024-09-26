@@ -1,0 +1,1417 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=M+PLUS+Rounded+1c:wght@500&family=Russo+One&display=swap');
+html{
+    scroll-behavior: smooth;
+} 
+body {
+    position: relative;
+    background: #272727;
+    margin:0;
+    height: auto;
+    font-family: "Karla","Russo One","Helvetica", sans-serif; 
+}
+body a {
+    text-decoration: none;
+}
+/* MAIN ARCHITECTURE ELEMENTS index.html */
+
+/* ----top section---- */
+#top {
+    height:600px;
+    width: 100%;
+    background-image:url('gallery/burnings/burning_concert.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 15%;
+}
+#top h1{
+    color: rgba(204, 172, 172, 0.747);
+    text-align: right;
+    margin: 0 20px 0 auto;
+    padding-top: -20px;
+    width: 50%;
+    font-size: 70px;
+    font-family: "Russo One"; 
+}
+#top h1 span {
+    font-size: 140px;
+    color: white;
+}
+/* ----header---- */
+header {
+    /* E4A95B */
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+header div a h1{
+    /* font-family: ; */
+    font-size: 80px !important;
+    font-weight: 700;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url('images/fontback.jpeg');
+    background-size: 400px;
+    font-family: "Russo One"; 
+}
+header div h1 {
+    margin: 0px;
+}
+header div img {
+    margin-top: 25px;
+    height: 40px;
+}
+header div button {
+    animation: none;
+    background-color: transparent;
+    border: transparent;
+    opacity: 1;
+}
+.buttonHide {
+    opacity: 1;
+    animation:ani 1.5s ;
+    opacity: 0;
+}
+.scrollFix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index : 3;
+}
+#menuOpen , #menuClose{
+    cursor: pointer;
+}
+/* ----footer---- */
+footer {
+    background-color: rgb(186, 191, 214);
+    padding: 20px 20px 10px 20px;
+}
+footer p {
+    display: block;
+    width: 50%;
+    margin: auto auto 10px auto;
+    text-align: center;
+}
+footer p a {
+    text-decoration: underline;
+    color: black;
+}
+footer p a:hover {
+    color: blueviolet;
+}
+/* ----main---- */
+main section {
+    margin: 20px 30px;
+}
+#general img {
+    display: block;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px ;
+}
+/* ----CIRCLES---- */
+main #circles {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+.container {
+    position: relative;
+    padding-bottom: 100px;
+    color: white;
+}
+.container ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    padding: 50px 0;
+    height: 380px;
+}
+.container ul li {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    border-right: 1px solid white;
+    height: auto;
+}
+.container ul li:last-child {
+    border-right: none;
+}
+.container ul li:hover {
+    overflow: visible;
+}
+.container ul img {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.container li:first-child img {
+    margin: 30px 0 0 10% !important;
+    height: 300px !important;
+}
+.container li:nth-child(2) img {
+    width: 360px;
+    height: 360px;
+    margin-top: 0;
+    margin-left: -40%;
+}
+.container li:nth-child(3) img {
+    width: 360px;
+    height: 360px;
+    margin: 10px 0 0  -40%;
+}
+.container li:last-child img {
+    width: 300px !important;
+    margin: 40px 0  0 -60% !important;
+}
+.container ul li:hover img {
+    border: 4px solid white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+    z-index: 2;
+}
+main #circles .text {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+main #circles .text p {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+/* ----PRINCIPLES---- */
+main #principles {
+    text-align: center;
+    color: white;
+    margin-top: -70px 0px 0px 0px;
+}
+main #principles h1 {
+    font-size:xx-large;
+}
+main #principles p {
+    margin-top: -15px;
+}
+main #principles p a {
+    color: white;
+    text-decoration: underline;
+}
+main #principles p a:hover {
+    text-decoration: none;
+    color: rgb(255, 218, 115); 
+}
+main #principles .stuckHolder {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: 250px; 
+}
+main #principles .stuckHolder div {
+    margin: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 5px 5px rgba(255, 0, 0, 0.726);
+}
+main #principles .stuckHolder div p {
+    margin-top: 20px;
+    font-size: large;
+}
+main #principles .stuckHolder div:first-child {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-color: #B0C4DE;
+    border: solid 3px #3374c9;
+}
+main #principles .stuckHolder div:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color:#DEB887;
+    border: solid 3px #d18d35;
+}
+main #principles .stuckHolder div:nth-child(3) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-color: #9370DB;
+    border: solid 3px #642bd6;
+}
+main #principles .stuckHolder  a.last-child {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    color: white;
+    margin-top: -20px;
+    padding:0;
+}
+main #principles .stuckHolder  a.last-child div {
+    background-color: #D8BFD8;
+    border: solid 3px #a850a8;
+}
+main #principles .stuckHolder  a.last-child:hover div{
+    border: solid 3px white;
+}
+/* ----REASON---- */
+#reason {
+    width: 50%;
+    padding: 20px;
+    margin: 70px auto 50px auto;
+    height: auto;
+    border: solid 2px white;
+    border-radius: 20px;
+    color: white;
+}
+#reason div {
+    display: flex;
+    justify-content: space-around;
+}
+#reason h1 {
+    margin: 0;
+    font-size: xx-large;
+    text-shadow: 5px 5px red;
+}
+#reason div p {
+    display: block;
+    width: 45%;
+}
+#reason iframe {
+    display: block;
+    width: 70%;
+    height: 300px;
+    margin:  30px auto auto auto;
+    border-radius: 20px;
+}
+/* ----button up---- */
+#upButton a div {
+    width: 45px;
+    margin: -40px 10px 0 auto;  
+}
+#upButton a div img {
+    opacity: 0.8;
+    height: 45px;
+} 
+.scrollFixButton {
+    transform: translateY(-150%);
+    animation: aniUp 1s forwards;
+    position: fixed;
+    top: 640px;
+    right:0;
+    z-index : 4;
+}
+/* ----aside---- */
+.asideShow {
+    display: block; 
+    transform: translateX(-150%);
+    animation: aniAsideShow 1s forwards;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width:30%;
+    z-index: 4;
+    background-color: rgba(143, 0, 255, 0.9);
+}
+
+.asideHide {
+    transform: translateX(0%);
+    animation: aniAsideHide 1s forwards;
+}
+aside {
+    display: none;
+}
+aside div p {
+    color: white;
+    text-align: center;
+    font-size:30px;
+}
+aside div ul {
+    font-size: 25px;
+    display: block;
+    width: 70%;
+    margin: 30px 30px auto auto;
+    list-style-image: url(images/right-arrow.png);
+}
+aside div ul li{
+    margin: 1rem 0;
+}
+aside div ul li a {
+    color: white;
+}
+aside div ul li a:hover {
+    text-decoration: underline;
+}
+aside div ul li .activeLink {
+    color: rgb(230, 199, 199);
+}
+aside div button {
+    margin: 20px 15px ;
+    animation: none;
+    background-color: transparent;
+    border: transparent;
+    opacity: 1;
+}
+
+aside div img {
+    height: 45px;
+}
+
+.buttonShow {
+    opacity: 0;
+    animation:aniBack 2s;
+    opacity: 1;
+}
+
+/*  */
+@keyframes ani {
+    100% {opacity: 0;}
+    0% {opacity: 1;}
+}
+
+@keyframes aniBack {
+    100% {opacity: 1;}
+    0% {opacity: 0;}
+}
+
+@keyframes aniAsideShow {
+    0% {transform: translateX(150%);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes aniAsideHide {
+    0% {transform: translateY(0);}
+    100% {transform: translateX(150%);}
+}
+
+@keyframes aniUp {
+    0% {transform: translateY(-10%);}
+    100% {transform: translateY(15%);}
+}
+
+
+/* REFERENCE PAGE STYLE */
+#refPages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+#refPages section {
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+#refPages section:first-child {
+    grid-column: 1/5;
+}
+#refPages section:nth-child(2n) {
+    grid-column: 1/3;
+}
+#refPages section:nth-child(3n) {
+    grid-column: 3/5;
+}
+#refPages section h1 {
+    font-size: x-large;
+}
+#refPages section {
+    font-size: large;
+}
+#refPages section ul li a {
+    color: black;
+    text-decoration: underline;
+}
+#refPages section ul li a:hover {
+    color: blueviolet;
+}
+
+/* LARGE SNAKE TEAMPLATE for timeline and break down? */
+#datesHeading h1 {
+    display: block;
+    width: 30px auto 30px auto;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+#snake {
+    margin: 0px auto 20px auto;
+    display: flex;
+    justify-content: center;
+}
+#snake .card {
+    margin-top: 2.5px;
+    position: relative;
+}
+#snake .card:nth-child(odd) {
+    padding: 15px 0 15px 15px;
+}
+#snake .card:nth-child(even) {
+    /* padding: 30px 30px 30px 0; */
+    padding: 15px 15px 15px 0;
+}
+/* Global ::before */
+#snake .card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid white;
+}
+/* Setting the border of top, bottom, left */
+#snake .card:nth-child(odd)::before {
+    left: 0;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 2px 0 2px 2px;
+    border-radius: 20px 0 0 20px;
+} 
+/* Setting the border of top, bottom, right */
+#snake .card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 2px 2px 2px 0;
+    border-radius: 0 20px 20px 0;
+} 
+/* Removing the border if it is the first card */
+#snake .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+} 
+/* Removing the border if it is the last card  and it's odd */
+#snake .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+/* Removing the border if it is the last card  and it's even */
+#snake .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+}
+/* Information about the timeline */
+#snake .info {
+    display: flex;
+    flex-direction: column;
+    background: rgb(134, 134, 134);
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+} 
+#snake .timeline .card .info h3 {
+    color: rgb(144, 205, 255);
+    position: relative;
+} 
+#snake .timeline .card .info p {
+    margin-top: -10px;
+}
+/* Timeline dot  */
+#snake .timeline .card .info h3::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid rgb(111, 158, 197);
+} 
+/* text right if the card is even  */
+#snake .card:nth-child(even) > .info > h3, #snake .card:nth-child(even) > .info > p {
+    text-align: right;
+}
+/* setting dot to the left/right depending on even or odd number it is */
+#snake .card:nth-child(odd) > .info > h3::before {
+    left: -32px;
+}
+#snake .card:nth-child(even) > .info > h3::before {
+    right: -32px;
+}
+#snake .timeline .card .info p {
+    text-align: center !important;
+}
+#snake .timeline .card .info p a {
+    color:rgb(144, 205, 255);
+    font-style: italic;
+    text-decoration: underline;
+}
+#snake .timeline .card .info p a:hover {
+    color: blueviolet;
+}
+
+/* dates page */
+#indepHeading {
+    color: white;
+    text-align: center;
+}
+.sepPage .timeline .card .info a {
+    color: white !important;
+}
+.sepPage .timeline .card .info p a:hover {
+    color: blueviolet !important;
+}
+
+/* 10 principleas page */
+#principlesHeading {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+#principlesHeading h1 {
+    font-size: xx-large;
+}
+#principlesHeading p {
+    font-size: large;
+}
+#principlesHeading p a {
+    color: white;
+    text-decoration: underline;
+}
+#principlesHeading p a:hover {
+    color: rgb(194, 135, 250);
+}
+#principlesStack {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+#principlesStack div {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    background-color: rgb(186, 191, 214);
+    border-radius: 20px;
+    margin: 20px auto;
+    border: solid 3px rgb(105, 128, 235);
+}
+#principlesStack div img {
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+#principlesStack #emptyPrin {
+    border: none;
+    background-color: transparent;
+}
+#principlesStack div h2 {
+    text-align: center;
+}
+/* for medium screen */
+@media screen and (min-width: 200px) and (max-width:1200px){
+    #top {
+        height:300px;
+    }
+    #top h1{
+        text-align: center;
+        margin: auto;
+        font-size: 30px;
+    }
+    #top h1 span {
+        font-size: 90px;
+    }
+    /* header */
+    header div a h1{
+        font-size: 60px !important;
+    }
+    header div img {
+        margin-top: 18px;
+        margin-right: 5px;
+        height: 30px;
+    }
+    /* aside */
+    aside div p {
+        color: white;
+        text-align: center;
+        font-size:x-large;
+    }
+    aside div ul {
+        font-size: 20px;
+        margin: 30px 30px auto 20px;
+    }
+    aside div img {
+        height: 30px;
+    }
+    #general img {
+        width: 350px;
+    }
+    /* circles */
+    main #circles {
+        width: 90%;
+    }
+    .container li:first-child img {
+        margin: 30px 0 0 4% !important;
+    }
+    .container li:nth-child(3) img {
+        margin: 8px 0 0 -50%;
+    }
+    .container li:last-child img {
+        margin: 40px 0  0 -80% !important;
+    }
+    /* principles */
+    main #principles {
+        margin-right: 0px;
+        margin-top: -100px;
+    }
+    main #principles .stuckHolder {
+        margin: auto;
+        display: block;
+    }
+    main #principles .stuckHolder div {
+        padding: 10px;
+    }
+    main #principles .stuckHolder div h2 {
+        margin-top: 5px;
+    }
+    main #principles .stuckHolder div p {
+        display: none;
+    }
+    main #principles .stuckHolder div:first-child p {
+        display: block;
+    }
+    main #principles .stuckHolder div:first-child:hover{
+        border-radius: solid 3px white;
+    }
+    /* reasons */
+    #reason {
+        width: 70%;
+        padding: 30px;
+    }
+    #reason div {
+        display: flex;
+        justify-content: space-around;
+    }
+    #reason h1 {
+        margin: 0;
+        font-size: xx-large;
+        text-shadow: 5px 5px red;
+    }
+    #reason div p {
+        display: block;
+        width: 45%;
+    }
+    #reason iframe {
+        display: block;
+        width: 70%;
+        height: 300px;
+        margin:  30px auto auto auto;
+        border-radius: 20px;
+    }
+    /* up button */
+    #upButton a div {
+        width: 45px;
+        margin: -40px -5px 0 auto;  
+    }
+    .scrollFixButton {
+        top: 940px;
+        right:-9px;
+    }
+}
+/* for phone screen */
+@media screen and (min-width: 100px) and (max-width:700px){
+    #top {
+        height:150px !important;
+    }
+    #top h1{
+        font-size: 20px;
+    }
+    #top h1 span {
+        font-size: 50px;
+    }
+    /* header */
+    header div a h1{
+        font-size: 30px !important;
+        background-size: 150px;
+    }
+    header div img {
+        margin-top: 5px;
+        margin-right: 0px;
+        height: 20px;
+    }
+    /* aside */
+    .asideShow {
+        width:50%;
+    }
+    aside div p {
+        font-size:large;
+    }
+    aside div img {
+        height: 20px;
+    }
+    #general img {
+        width: 60px;
+    }
+    /* circles */
+    main #circles .text p {
+        display: block;
+    }
+    main #circles .text {
+        display: block;
+    }
+    main #circles {
+        width: 90%;
+    }
+    .container ul {
+        height: 250px;
+        margin-bottom: -20px;
+    }
+    .container li:first-child img {
+        margin: 30px 0 0 4% !important;
+    }
+    .container li:nth-child(3) img {
+        margin: 8px 0 0 -50%;
+    }
+    .container li:last-child img {
+        margin: 40px 0  0 -80% !important;
+    }
+    .container ul img {
+        width: 300px;
+        height: 200px !important;
+    }
+    .container li:first-child img {
+        margin: 20px 0 0 15% !important;
+        height: 200px !important;
+        width: 200px;
+    }
+    .container li:nth-child(2) img {
+        width: 200px;
+        height: 220px !important;
+        margin-top: 10px;
+        margin-left: -70%;
+    }
+    .container li:nth-child(3) img {
+        width: 220px;
+        height: 220px !important; 
+        margin: 10px 0 0  -80%;
+    }
+    .container li:last-child img {
+        width: 200px !important;
+        height: 200px !important; 
+        margin: 15px 0  0 -150% !important;
+    }
+    /* principles */
+    main #principles {
+        margin: 0;
+        margin-right: 0px;
+        margin-top: -100px;
+    }
+    main #principles .stuckHolder {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    main #principles .stuckHolder div {
+        padding: 10px;
+    }
+    main #principles .stuckHolder div h2 {
+        margin-top: 5px;
+    }
+    main #principles .stuckHolder div p {
+        display: none;
+    }
+    main #principles .stuckHolder div:first-child p {
+        display: block;
+    }
+    main #principles .stuckHolder div:first-child:hover{
+        border-radius: solid 3px white;
+    }
+    /* reasons */
+    #reason {
+        width: 70%;
+        padding: 30px;
+    }
+    #reason div {
+        display: flex;
+        justify-content: space-around;
+    }
+    #reason h1 {
+        margin: 0;
+        font-size: xx-large;
+        text-shadow: 5px 5px red;
+    }
+    #reason div p {
+        display: block;
+        width: 45%;
+    }
+    #reason iframe {
+        display: block;
+        width: 70%;
+        height: 300px;
+        margin:  30px auto auto auto;
+        border-radius: 20px;
+    }
+    /* up button */
+    #upButton a div {
+        display: none;
+    }
+    /* principles */
+    main #principles h1 {
+        font-size: large;
+    }
+    main #principles p {
+        font-size: small;
+    }
+    main #principles .stuckHolder div h2 {
+        margin-top: 5px;
+        font-size: large;
+    }
+    main #principles .stuckHolder div p {
+        font-size: small;
+    }
+    /* reasons */
+    #reason div {
+        display: block;
+    }
+    #reason div p {
+        display: block;
+        width: 100% !important;
+    }
+    #reason iframe {
+        width: 100%;
+    }
+    /* dates */
+    #datesHeading h1 {
+        font-size: large;
+    }
+    #snake .card {
+        width: 80%;
+        margin: auto;
+    }
+    #snake .timeline .card .info h3 {
+        font-size: large;
+    } 
+    #snake .timeline .card .info p {
+        margin-top: -10px;
+    }
+    /* Setting the border of top, bottom, left */
+    #snake .card:nth-child(odd)::before {
+        top: -2.2px;
+        bottom: -2.2px;
+    } 
+    /* footer */
+    footer p {
+        width: 90% !important;
+        font: small;
+    }
+    /* 10 principleas page */
+    #principlesHeading {
+        width: 80%;
+    }
+    #principlesHeading h1 {
+        font-size: x-large;
+    }
+    #principlesHeading p {
+        font-size: small;
+    }
+    #principlesStack {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #principlesStack div {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+        background-color: rgb(186, 191, 214);
+        border-radius: 20px;
+        margin: 20px auto;
+    }
+    #principlesStack #emptyPrin {
+        display: none;
+    }
+    #principlesStack div h2 {
+        text-align: center;
+        font-size: 15px;
+    }
+    #principlesStack div p {
+        font-size: small;
+    }
+    /* reference page */
+    #refPages {
+        display: block !important;
+    }
+}
+
+
+
+
+
+
+
+
+/* GALLERY PAGE STYLE */
+
+
+#galleryBody *, #bodyHistory *{ 
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#galleryBody{
+    overflow-x: hidden;
+}
+.infoCards{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+}
+.infoCards a{
+    color: white;
+}
+.infoCards .cards{
+    position: relative;
+    bottom: -100px;
+    opacity: 0;
+    width: 300px;
+    min-height: 30vh;
+    border-radius: 20px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.infoCards .cards img{
+    transition: all 0.5s;
+}
+.infoCards .cards:hover img{
+    transform: scale(1.02);
+}
+.infoCards .cards img{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+.infoCards .cards p{
+    text-align: justify;
+    padding: 0 0.5rem;
+} 
+.galleryContainer section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.galleryContainer .imagesCover{
+    position: relative;
+}
+.galleryContainer .imagesCover h1 , .imageTitle{
+    color: white;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+/* HISTORY PAGE STYLE */
+.flexBox{
+    display: flex;
+}
+.mainTitle{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 4rem 0;
+    
+}
+.x1{
+    font-size: 30px;
+}
+.x3{
+    font-size: 70px;
+    
+}
+.title{
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 3rem 0;
+}
+.history{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.historyMiddleArticles{
+    padding: 2rem;
+    color: white;
+    font-size: 20px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.historyArticle{
+    padding: 2rem;
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    margin: 3rem 0;
+    text-align: justify;
+}
+.historyArticleContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.historyArticleContainer .title{
+    margin-bottom: 1rem;
+}
+.historyArticleContainer img{ 
+    align-self: center;
+    width: 100%;
+}
+
+.imageContainer{
+    border-top: 1px solid black;
+    position: relative;
+    margin: auto;
+    width: fit-content;
+}
+.imageContainer .imageTitle{
+    color: rgb(116, 116, 116);
+}
+.imageBackground{
+    width: 100%;
+}
+.imageContainer img{
+    display: block;
+    margin-bottom: 1rem;
+    width: 90%;
+    margin: auto;
+}
+.imageReference{
+    color: white;
+    font-size: 14px;
+    padding-left: 1rem;
+}
+.vehiculesArticle{
+    position: absolute;
+    top: 5%;
+    right: 10px;
+}
+
+.timeLineContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    column-gap: 6rem;
+    text-align: justify;
+}
+.timeLineContainer div p{
+    width: fit-content;
+    padding: 0.7rem;
+    background-color: #d18d35;
+    border-radius: 0 5px 5px 0;
+}
+
+.timeLineContainer div{
+    background-color: #d18d35;
+    width: 3px;
+}
+
+
+
+
+/*            CONTACT US PAGE STYLE            */
+
+#contactUsBody{
+    transition: all 0.5s;
+}
+#sentMessageContainer{
+    display: none;
+    position: fixed;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.418);
+    color: white;
+    font-size: 25px;
+    padding: 1rem 2rem;
+    box-shadow: 3px 3PX 3PX black;
+    z-index: 10;
+}
+#messageClose{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    cursor: pointer;
+    width: fit-content;
+}
+.contactUsIntroduction{
+    text-align: center;
+    font-size: 25px;
+    width: 1000px;
+    margin: 5rem auto ;
+    color: white;
+}
+.contactContainer{
+    background-color: white;
+    justify-content: space-around;
+    padding: 3rem 1rem;
+}
+.contactContainer #upButton{
+    display: none;
+}
+.contactCards .cards{
+    position: relative;
+    cursor:auto;
+    width: 250px;
+    background-color: white;
+    border-radius: 0;
+    color: black;
+    padding: 1rem;
+}
+.contactCards .cards img{
+    height: 150px;
+    width: auto;
+}
+.contactCards .cards span{
+    margin: 10px 0;
+    display: block;
+    width: 0;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+.contactCards .cards span a{
+    display: block;
+    width: 240px;
+    text-align: center;
+    color: black;
+}
+.contactCards .cards img:hover+span{
+    width: 100%;
+    border-right: 2px solid #d18d35;
+}
+.contactCards .cards h1{
+    font-size: 25px;
+}
+.contactInfo {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contactInfo h3 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.contactInfo p {
+    margin-bottom: 10px;
+}
+
+.email {
+    color: #007bff !important; 
+}
+
+.phone {
+    color: #dc3545;
+}
+
+.contactForm {
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    padding: 2rem;
+}
+
+.contactForm h3 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.contactForm label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contactForm input[type="text"],
+.contactForm textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.contactForm #submitButton{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#errorMessage{
+    color: red;
+}
+.contactForm input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*        ABOUT US PAGE STYLE         */
+.aboutus #upButton{
+    display: none;
+}
+.aboutUsContainer{
+    background-image: url("images/about/burningman.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.aboutUsContainer h1{
+    font-size: 40px;
+}
+.aboutUsContainer .upButton{
+    display: none;
+}
+
+.aboutUsContainer p {
+    color: white;
+    font-size: 25px;
+}
+.referenceMore a{
+    color: white;
+    text-decoration: underline;
+}
+
+
+/*            ABOUT DEVS STYLE                 */
+
+.aboutDevsCards .cards{
+    box-sizing: border-box;
+    width: 600px;
+    cursor: auto;
+    bottom: 0;
+    opacity: 1;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+.aboutDevsCards .cards img{
+    border-radius: 5px;
+    width: 100%;
+}
+.workBreakdown{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 1000px;
+    padding: 2rem;
+    margin: auto;
+}
+.workBreakdown .title{
+    text-align: center;
+}
+.workBreakdown ul{
+    width: 350px;
+    list-style: none ;
+    font-size: 25px;
+    color: #d18d35;
+}
+.workBreakdown ul li{
+    margin: 1rem;
+}
+.workBreakdown ul li a{
+    color: #d18d35;
+}
+
+/*            MEDIA QUERRIES                 */
+
+
+
+@media screen and (max-width: 1300px) {
+    .workBreakdown{
+        width: 90% ;
+    }
+    .contactUsIntroduction{
+        width: 90%;
+        text-align: justify;
+    }
+    .contactForm {
+        margin: 1rem auto;
+        width: 500px;
+    }
+    .galleryContainer .imagesCover h1{ 
+        font-size: 30px !important;
+    }
+    .imagesCover img{
+        width: 100%;
+    }
+    .historyArticleContainer{
+        flex-direction: column;
+    }
+    .historyArticle{
+        width: 90%;
+        margin: auto;
+    }
+    #top {
+        background-size: cover;
+    }
+    .aboutUsContainer{
+        background-size: cover;
+    }
+    .flexBox{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutDevsCards .cards{
+        padding: 0;
+        width: 95%;
+    }
+    .contactForm {
+        width: 90%;
+    }
+    .galleryContainer .imagesCover h1{ 
+        font-size: 25px !important;
+    }
+    .galleryImages{
+        width: 100%;
+    }
+    .historyMiddleArticles{
+        text-align: justify;
+        padding: 2rem 0;
+    }
+}
+@media screen and (max-width: 560px) {
+
+    .galleryContainer .imagesCover h1{ 
+        font-size: 20px !important;
+    }
+    #general img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .galleryOutfitImages{
+        width: 100%;
+    }
+    .historyArticleContainer{
+        padding: 2rem 0;
+    }
+    .historyMiddleArticles{
+        width: 90%;
+    }
+}
